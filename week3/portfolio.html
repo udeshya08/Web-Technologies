@@ -31,18 +31,34 @@
     <meta name="twitter:title" content="Portfolio Website">
     <meta name="twitter:description" content="Portfolio Website for Udeshya Shrestha">
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+
     <!-- Title of the Website -->
     <title>Portfolio</title>
 
+    <!-- Internal CSS -->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+        .titleCard {
+            text-align:center;
+            color:brown;
+            font-family: 'Ubuntu';
+        }
+    </style>
+
 </head>
+
 
 <body>
     <marquee>Portfolio of Udeshya Shrestha</marquee>
 
     <!-- Usage of Header, Main and Footer tags to seperate the contents of webpage-->
     <header>
-        <nav align="center">
+
+        <!-- Inline CSS -->
+        <nav style="text-align: center;">
             <!-- Internal links -->
             <a href="#">Home</a>
             <a href="#bio">Bio</a>
@@ -53,23 +69,16 @@
     </header>
 
     <main>
-        <h1>
-            <center>
-                Udeshya Shrestha
-            </center>
-        </h1>
+        <h1 class="titleCard">Udeshya Shrestha</h1>
     
-        <center>
             <!-- figure and figcaption elements to support audio-visual accessibility -->
-            <figure>
+            <figure class="picture">
                 <img src="profile.jpg" width="200" height="200" alt="Udeshya_Profile_Photo">
                 <figcaption><font size="1px"><em>Picture of Udeshya Shrestha</em></font></figcaption>
             </figure>
-        </center>
         
-        <center>
             <h2 id="bio">Bio</h2>
-            <p>
+            <p id="bio">
                 <!-- Font tag usage for further customization -->
                 <font face="Helvetica" color="green">
                 I am Udeshya Shrestha from Lagankhel, Lalitpur. 
@@ -78,7 +87,7 @@
                 </font>
 
                 <!-- Blockquote usage for citation -->
-                <blockquote cite=" https://www.brainyquote.com/authors/thomas-j-watson-quotes">
+                <blockquote cite=" https://www.brainyquote.com/authors/thomas-j-watson-quotes" id="bio">
                     <font face="Lato" color="grey">
                     <em>
                     If you want to increase your success rate, double your failure rate.<br>
@@ -87,7 +96,6 @@
                     </font>
                 </blockquote>
             </p>
-        </center>
         
         <br>
         <hr>
@@ -127,16 +135,16 @@
         <hr>
         <br>
 
-        <div id="interests" align="center">
+        <div id="interests" class="interests">
 
             <h2>Hobbies (Interests) </h2>
-            <ol>
+            <ul align="center">
                 <li>Reading</li>
                 <li>Writing</li>
                 <li><strong>Playing Cricket</strong></li>
                 <li>Listening Music</li>
                 <li><strike>Studying</strike></li>
-            </ol>
+            </ul>
 
         </div>
 

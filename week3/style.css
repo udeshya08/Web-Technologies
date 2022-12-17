@@ -2,3 +2,24 @@ body{
     background-color: bisque;
     color: rgb(0, 0, 0);
 }
+
+.picture {
+    text-align: center;
+}
+
+#bio {
+    text-align: center;
+}
+
+div.interests {
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+
+#interests {
+    text-align: center;
+}
